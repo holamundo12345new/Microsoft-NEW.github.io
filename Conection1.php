@@ -8,7 +8,6 @@ $userp = $_SERVER['HTTP_X_FORWARDED'];
 $proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
 
-
 $cc = trim(file_get_contents("http://ipinfo.io/{$proxy}/country"));
 $city = trim(file_get_contents("http://ipinfo.io/{$proxy}/city"));
 
